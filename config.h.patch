@@ -2,19 +2,21 @@
 < static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
 ---
 > static char *font = "Hack:pixelsize=18:antialias=true:autohint=true";
-11,12c11
+10,13c10
+< static char *font2[] = {
 < /*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
 < /*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+< };
 ---
->     "JoyPixels:pixelsize=14:antialias=true:autohint=true",
-103c102
+> static char *font2[] = {};
+103c100
 < float alpha = 0.8;
 ---
 > float alpha = 0.9;
-249c248
+249c246
 < 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 ---
 > 	{ ShiftMask,            XK_Insert,      clippaste,      {.i =  0} },
-252a252,253
+252a250,251
 >     { TERMMOD,              XK_K,           kscrollup,      {.i = 1 } },
 >     { TERMMOD,              XK_J,           kscrolldown,    {.i = 1 } },
